@@ -7,11 +7,11 @@
 <script type="text/javascript">
 	var flashparams = {"game" : "https://dl.dropboxusercontent.com/s/0dneqn634ishzrt/khcom.gba?dl=0"};
 	var params = ["game", "server"];
-	for (var i = 0; i < params.length; i++)
+	/*for (var i = 0; i < params.length; i++)
 	{
 	    var match = location.search.match(params[i]+"=([^&#]*)");
 	    if (match != null)
 		flashparams[params[i]] = match[1];
-	}
+	}*/
 	swfobject.embedSWF("gba.swf", "emulator", "240px", "160px", "12.0", null, flashparams, {"allowFullscreenInteractive":true, /*wmode: 'transparent'*/});
 </script>
