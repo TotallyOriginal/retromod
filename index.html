@@ -47,18 +47,18 @@
 	});
 	
 </script>-->
+<script type="text/javascript">
+	var flashparams = {"game" : "Kingdom Hearts - Chain of Memories - English"};
+	var params = ["game", "server"];
+	for (var i = 0; i < params.length; i++)
+	{
+	    var match = location.search.match(params[i]+"=([^&#]*)");
+	    if (match != null)
+		flashparams[params[i]] = match[1];
+	}
+	swfobject.embedSWF("gba.swf", "emulator", "240px", "160px", "12.0", null, flashparams, {"allowFullscreenInteractive":true, /*wmode: 'transparent'*/});
+</script>
 <body style="background-color:#999999">
-	<script type="text/javascript">
-                var flashparams = {"game" : "Kingdom Hearts - Chain of Memories - English"};
-                var params = ["game", "server"];
-                for (var i = 0; i < params.length; ++i)
-                {
-                    var match = location.search.match(params[i]+"=([^&#]*)");
-                    if (match != null)
-                        flashparams[params[i]] = match[1];
-                }
-                swfobject.embedSWF("gba.swf", "swf", "240px", "160px", "12.0", null,
-                flashparams, {"allowFullscreenInteractive":true, /*wmode: 'transparent'*/});
-            </script>
+	<div id="emulator"></div>
 	<!--<object type="application/x-shockwave-flash" data="gba.swf" width="100%" height="100%" id="swf" style="visibility: visible;"><param name="allowFullscreenInteractive" value="true"><param name="flashvars" value="game=Kingdom Hearts - Chain of Memories - English"></object>-->
 </body>
